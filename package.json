@@ -1,0 +1,28 @@
+{
+  "name": "@jbtcd/threesixtyjs",
+  "version": "1.0.0",
+  "description": "See products with a new 360° view",
+  "keywords": [
+    "ThreeSixty",
+    "360°"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbtcd/threesixtyjs"
+  },
+  "scripts": {
+    "watch": "tsc -w --outDir ./dist",
+    "uglify": "uglifyjs --compress --mangle -- dist/ThreeSixtyJS.js > dist/ThreeSixtyJS.min.js",
+    "build": "tsc --outDir ./dist && npm run uglify"
+  },
+  "author": {
+    "name": "Jonah Böther",
+    "email": "mail@jbtcd.me",
+    "url": "https://jbtcd.me"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.4.5",
+    "uglify-es": "^3.3.9"
+  }
+}
